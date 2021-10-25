@@ -6,12 +6,12 @@ public class StarbuzzCoffee {
         System.out.println(beverage.getDescription() + " $" + beverage.cost());
 
         Beverage beverage1 = new Espresso();
-        beverage = new Mocha(beverage1);
-        System.out.println(beverage.getDescription() + " $" + beverage.cost());
+        beverage1 = new Mocha(beverage1);
+        System.out.println(beverage1.getDescription() +" "+ beverage1.getSize() + " $" + beverage1.cost());
 
         Beverage beverage2 = new HouseBlend();
         beverage2 = new Mocha(beverage2);
         beverage2 = new Mocha(beverage2);
-        System.out.println(beverage2.getDescription() + " $" + beverage2.cost());
+        System.out.println(beverage2.getDescription() + " "+beverage.getSize() + " $" + beverage2.cost());
     }
 }
