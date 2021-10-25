@@ -1,8 +1,8 @@
 package com.company.decorator;
 
-public class Expresso extends Beverage {
+public class Espresso extends Beverage {
 
-    public Expresso() {
+    public Espresso() {
         description = "Expresso";
     }
 
