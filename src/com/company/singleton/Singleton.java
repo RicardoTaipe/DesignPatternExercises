@@ -1,16 +1,12 @@
 package com.company.singleton;
 
 public class Singleton {
-    private volatile static Singleton uniqueInstance;
-    private Singleton() {}
+    private static Singleton instance = new Singleton();
+
+    private Singleton() {
+    }
+
     public static Singleton getInstance() {
-        if(uniqueInstance == null){
-            synchronized (Singleton.class) {
-                if(uniqueInstance == null){
-                    return new Singleton();
-                }
-            }
-        }
-        return uniqueInstance;
+        return instance;
     }
 }
